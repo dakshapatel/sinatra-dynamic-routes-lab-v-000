@@ -25,6 +25,7 @@ class App < Sinatra::Base
     @all_five_words = params[:word1]params[:word2]params[:word3]params[:word4]params[:word5]
     "#{@all_five_words}"
   end
+  end
 
 
 end
