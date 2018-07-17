@@ -25,7 +25,7 @@ class App < Sinatra::Base
     @all_five_words = params[:word1], params[:word2], params[:word3], params[:word4], params[:word5]
       @words_combined = @all_five_words.join(" ")
     binding.pry
-    "#{@all_five_words}"
+    "#{@words_combined}"
   end
 
 
