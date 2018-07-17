@@ -37,13 +37,13 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2'do
   #binding.pry
     if params[:operation] == "add"
-      @add = params[:number1] + params[:number2]
+      @add = params[:number1].to_i + params[:number2].to_i
     elsif params[:operation] == "subtract"
-      @subtract = params[:number1] - params[:number2]
+      @subtract = params[:number1.to_i] - params[:number2].to_i
     elsif params[:operation] == "multiply"
-      @multiply = params[:number1] * params[:number2]
+      @multiply = params[:number1].to_i * params[:number2].to_i
     else params[:operation] == "divide"
-      @divide = params[:number1] / params[:number2]
+      @divide = params[:number1].to_i / params[:number2].to_i
 
       "#{@add} || #{@subtract} || #{@multiply} || #{@divide}"
   end
