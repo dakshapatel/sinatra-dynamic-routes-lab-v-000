@@ -37,7 +37,7 @@ class App < Sinatra::Base
     elsif :operation == multiply
       @multiply = params[:number1] * [:number2]
     else :operation == divide
-      @divide = params[:number1] / [:number2]]
+      @divide = params[:number1] / [:number2]
 
       "#{@add} || #{@subtract} || #{@multiply} || #{@divide}"
   end
