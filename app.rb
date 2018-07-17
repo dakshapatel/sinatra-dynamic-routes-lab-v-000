@@ -21,7 +21,7 @@ class App < Sinatra::Base
 
       params[:number].to_i.times do |i|
         @phrase_number_of_times << params[:phrase]
-      puts  params[:phrase]
+
 
     end
 
