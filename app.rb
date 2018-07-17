@@ -21,8 +21,6 @@ class App < Sinatra::Base
 
       params[:number].to_i.times do |i|
         @phrase_number_of_times << params[:phrase]
-
-
     end
 
     "#{@phrase_number_of_times}"
@@ -39,13 +37,13 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2'do
 
     if :operation == add
-      @add = params[:number1] + [:number2]
+      @add = params[:number1] + params[:number2]
     elsif :operation == subtract
-      @subtract = params[:number1] - [:number2]
+      @subtract = params[:number1] - params[:number2]
     elsif :operation == multiply
-      @multiply = params[:number1] * [:number2]
+      @multiply = params[:number1] * params[:number2]
     else :operation == divide
-      @divide = params[:number1] / [:number2]
+      @divide = params[:number1] / params[:number2]
 
       "#{@add} || #{@subtract} || #{@multiply} || #{@divide}"
   end
