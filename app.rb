@@ -41,6 +41,7 @@ class App < Sinatra::Base
 
       "#{@add} || #{@subtract} || #{@multiply} || #{@divide}"
   end
+end
 
 
 end
