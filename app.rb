@@ -21,4 +21,10 @@ class App < Sinatra::Base
     "#{@phrase_number_of_times}"
   end
 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    @all_five_words = params[:word1]params[:word2]params[:word3]params[:word4]params[:word5]
+    "#{@all_five_words}"
+  end
+
+
 end
